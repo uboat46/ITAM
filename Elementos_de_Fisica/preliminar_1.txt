@@ -6,10 +6,55 @@
                     155902
 ===================================================
 =================== Preguntas =====================
-
+===================================================
+==============
 1) ¿Qué es la corriente eléctrica?
-
+==================================
 La corriente eléctrica es el flujo de carga o electrones
 con respecto al tiempo que recorre un circuito eléctrico.
 
-2) ¿Qué es una pila (batería)? ¿Quién creó la primera pila? 
+==============
+2) ¿Qué es una pila (batería)? ¿Quién creó la primera pila?
+=================================================== 
+Una pila es un instrumento que a travez de una celda galvánica 
+convierte energia quimica en energia eléctrica a partir de reacciones
+redox dónde se encuentran dos metales conectados por un puente salino.
+
+Una bateria consta de agrupaciones de celdas conectadas en serie o 
+en paralelo.
+
+La primera pila voltáica fue desarrollada por Alessandro Volta inspirado
+por Luigi Galvani que diseccionando una rana formo un tipo de celda 
+formado por un bisturi, un gancho metalico y los musculos de la rana.
+
+Esta pila voltáica (la de Volta), consiste en pares de discos de cobres y 
+zinc apilados uno sobre el otro, de ahi el nombre "pila".
+
+==============
+2) ¿Qué es una fuente de voltaje?
+=================================================== 
+Es un dispositivo que crea una diferrencia de potencial entre dos
+puntos lo que permite crear una corriente eléctrica entre ambos.
+Potencial eléctrico definido como el trabajo necesario para mover una carga
+positiva de un punto a otro.
+
+==============
+3) ¿Qué es un generador de funciones? 
+=================================================== 
+Es un dispositivo que genera ondas, generalmente de tipo
+senoidal, triangulares o cuadráticas. Se utilizan para pruebas y calibración 
+de sistemas de audio, ultrasónicos y servo.
+
+==============
+4) ¿Qué es un multímetro?
+=================================================== 
+Es un instrumento eléctrico que sirve para medir magnitudes
+eléctricas: corrientes, potenciales, resistencias, capacidades u otras.
+Sirven para corrientes alternas y continuas.
+
+==============
+5) ¿Qué es un osciloscopio? 
+=================================================== 
+Es un instrumento que permite la visualización gráfica de señales eléctricas.
+Las señales se representan como puntos de R^2 en un eje XoY donde generalmente
+X corresponde al tiempo e Y corresponde a la tensión eléctrica.
