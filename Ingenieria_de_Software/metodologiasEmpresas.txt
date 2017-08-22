@@ -1,0 +1,16 @@
+====================================================
+====================================================
+                ING DE SOFTWARE
+                ===============
+               EMILIANO SOTOMAYOR
+                    155902
+====================================================
+====================================================
+RAPPI:
+
+Metodología: Ágil (tipo scrum)
+Procesos: muy mal definidos, se llevan acabo dependiendo de la carga de trabajo
+Utilizaron scrum hasta que vieron que era muy poco eficaz para su velocidad de trabajo 
+            se guán dependidendo de la carga de trabajo en la que se les solicite
+
+            
