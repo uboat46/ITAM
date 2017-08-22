@@ -58,3 +58,6 @@ Sirven para corrientes alternas y continuas.
 Es un instrumento que permite la visualización gráfica de señales eléctricas.
 Las señales se representan como puntos de R^2 en un eje XoY donde generalmente
 X corresponde al tiempo e Y corresponde a la tensión eléctrica.
+
+=================== Preguntas =====================
+===================================================
