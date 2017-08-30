@@ -1,0 +1,78 @@
+       Laboratorio de Elementos de Física
+===================================================
+===================================================
+
+          EMILIANO SOTOMAYOR GONZÁLEZ
+                    155902
+===================================================
+=================== Preguntas =====================
+===================================================
+1.-
+
+==============
+a) ¿Qué es un vector?
+==================================
+En física, un vector es utilizado para representar una magnitud física
+que contiene una dirección y un sentido. Su representación gráfica es de una linea
+que parte de un centro referenciado con la magnitud y sentido antes propuestas.
+Matemáticamente representados como un conjunto ordenado de números.
+
+==============
+b) ¿Para que son usados los vectores?
+==================================
+Los vectores son utilizados para una cantidad infinita de cosas.
+Entre algunos ejemplos podemos mencionar algunos clásicos como:
+La representación de fuerzas físicas en el espacio, la descripción
+objetiva de particulas en el espacio, el movimiento de objetos en un plano.
+
+Aún asi tambien son utilizados en otros sentidos, por ejemplo la representación
+gráfica de imágenes en una computadora, las transformaciones de objetos al ser
+vistos desde un punto distinto de referencia, la descripción de fenomenos oculares y 
+la representación geométrica de rayos entre muchas otras.
+
+=================================================== 
+2.-
+
+==============
+a) - Describa seno y coseno en función de los lados y ángulos del sig. triángulo.
+===================================================
+Sin(alpha) = b/c; Sin(beta) = a/c;
+Cos(alpha) = a/c; Cos(beta) = b/c;
+
+==============
+b) - Descripción de promedio, desv std y varianza dandoles un significado físico. 
+===================================================
+Promedio: definido como (1/n)* Sum(Xi) para todo i = 1,2,3,..,n;
+Varianza: definida como (1/n)* Sum((Xi - (X^-)))^2 para todo i = 1,2,3,...,n; y donde X^- = promedio de {x1,x2,...,xn};
+Desv Std: definida como sqrt(Varianza);
+
+El promedio es el vector el cual cruza por el medio de dónde se acumulan más los datos.
+La varianza sería el vector que describe la forma en como los datos varían en un área promedio.
+La desv std es el vector que cruza o corta el área donde los datos se acumulan de manera más junta.
+
+=================================================== 
+3.-
+
+==============
+a) - Investigue el metodo gráfico y análitico de sumar vectores 
+===================================================
+Gráfico:
+https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwja-d7spv7VAhXly4MKHYb6CggQjRwIBw&url=https%3A%2F%2Fwww.fisicalab.com%2Fapartado%2Fsuma-de-vectores&psig=AFQjCNGsJBLYZNahZLQqK3VNhmpKOQ4TGg&ust=1504160013630658
+
+Análitico:
+
+Sea u = [x1,x2,x3,...,xn] un vector y
+    v = [y1,y2,y3,...,yn] otro vector
+    se define la suma de u con v de la siguiente manera
+
+    u + v = [x1 + y1, x2 + y2, ..., xn + yn];
+
+    o de otra manera sean los vectores u,v pertenecientes a R^n
+    se define a u + v de la siguiente manera
+
+    u + v = x, donde x es un vector perteneciente a R^n que para cada entrada contiene a
+                            xi + yi para toda i = 1,2,3,...,n;
+
+
+
+
