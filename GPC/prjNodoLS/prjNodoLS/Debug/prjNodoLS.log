@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  prjNodoLS.cpp
+c:\155902\itam\gpc\prjnodols\prjnodols\prjnodols.cpp(184): warning C4101: 'c': variable local sin referencia
+  prjNodoLS.vcxproj -> C:\155902\ITAM\GPC\prjNodoLS\Debug\prjNodoLS.exe
+  prjNodoLS.vcxproj -> C:\155902\ITAM\GPC\prjNodoLS\Debug\prjNodoLS.pdb (Partial PDB)
