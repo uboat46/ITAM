@@ -1,0 +1,168 @@
+f = [[1;2;1;1],[1;2;-1;1],[-1;2;-1;1],[-1;2;1;1]]
+
+f =
+
+     1     1    -1    -1
+     2     2     2     2
+     1    -1    -1     1
+     1     1     1     1
+
+f = [[1;2;1;1],[1;2;-1;1],[-1;2;-1;1],[-1;2;1;1],[1;2;1;1]]
+
+f =
+
+     1     1    -1    -1     1
+     2     2     2     2     2
+     1    -1    -1     1     1
+     1     1     1     1     1
+
+f1 = [[1;0;0;0],[[0;1;0;0],[0;0;1;0],[0;-4;0;1]]] 
+
+f1 =
+
+     1     0     0     0
+     0     1     0    -4
+     0     0     1     0
+     0     0     0     1
+
+hold off
+f = [f1,f2]
+{Undefined function or variable 'f2'.
+} 
+f = [f,f1]
+
+f =
+
+     1     1    -1    -1     1     1     0     0     0
+     2     2     2     2     2     0     1     0    -4
+     1    -1    -1     1     1     0     0     1     0
+     1     1     1     1     1     0     0     0     1
+
+plot3(f(1,1:5),f(2,1:5),f(3,1:5))
+hold on
+plot3(f(1,6:10),f(2,6:10),f(3,6:10))
+{Index exceeds matrix dimensions.
+} 
+plot3(f(1,6:9),f(2,6:9),f(3,6:9))
+hold off
+plot3(f(1,1:5),f(2,1:5),f(3,1:5))
+f1 = [[1;0;0;0],[[0;1;0;0],[0;0;1;0],[0;-4;0;1]]]*f
+
+f1 =
+
+     1     1    -1    -1     1     1     0     0     0
+    -2    -2    -2    -2    -2     0     1     0    -8
+     1    -1    -1     1     1     0     0     1     0
+     1     1     1     1     1     0     0     0     1
+
+f = [[1;2;1;1],[1;2;-1;1],[-1;2;-1;1],[-1;2;1;1],[1;2;1;1]]
+
+f =
+
+     1     1    -1    -1     1
+     2     2     2     2     2
+     1    -1    -1     1     1
+     1     1     1     1     1
+
+f1 = [[1;0;0;0],[[0;1;0;0],[0;0;1;0],[0;-4;0;1]]]*f
+
+f1 =
+
+     1     1    -1    -1     1
+    -2    -2    -2    -2    -2
+     1    -1    -1     1     1
+     1     1     1     1     1
+
+f2 = [f,f1]
+
+f2 =
+
+     1     1    -1    -1     1     1     1    -1    -1     1
+     2     2     2     2     2    -2    -2    -2    -2    -2
+     1    -1    -1     1     1     1    -1    -1     1     1
+     1     1     1     1     1     1     1     1     1     1
+
+plot3(f2(1,1:5),f2(2,1:5),f2(3,1:5))
+plot3(f2(1,5:9),f2(2,5:9),f2(3,5:9))
+f = [[1;2;1;1],[1;2;-1;1],[-1;2;-1;1],[-1;2;1;1],[1;2;1;1]]
+
+f =
+
+     1     1    -1    -1     1
+     2     2     2     2     2
+     1    -1    -1     1     1
+     1     1     1     1     1
+
+f1 = [[1;0;0;0],[[0;1;0;0],[0;0;1;0],[0;-4;0;1]]]
+
+f1 =
+
+     1     0     0     0
+     0     1     0    -4
+     0     0     1     0
+     0     0     0     1
+
+f2 = f1 * f
+
+f2 =
+
+     1     1    -1    -1     1
+    -2    -2    -2    -2    -2
+     1    -1    -1     1     1
+     1     1     1     1     1
+
+f = {}
+
+f =
+
+  0×0 empty <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+f = [[1;2;1;1],[1;2;-1;1],[-1;2;-1;1],[-1;2;1;1],[1;2;1;1]]
+
+f =
+
+     1     1    -1    -1     1
+     2     2     2     2     2
+     1    -1    -1     1     1
+     1     1     1     1     1
+
+ff = [f,f2]
+
+ff =
+
+     1     1    -1    -1     1     1     1    -1    -1     1
+     2     2     2     2     2    -2    -2    -2    -2    -2
+     1    -1    -1     1     1     1    -1    -1     1     1
+     1     1     1     1     1     1     1     1     1     1
+
+plot3(ff(1,1:5),ff(2,1:5),ff(3,1:5))
+hold on
+plot3(ff(1,6:10),ff(2,6:10),ff(3,6:10))
+plot3(ff(1,:),ff(2,:),ff(3,:))
+plot3(ff(1,1:5),ff(2,1:5),ff(3,1:5))
+hold on
+plot3(ff(1,6:10),ff(2,6:10),ff(3,6:10))
+hold off
+plot3(ff(1,1:5),ff(2,1:5),ff(3,1:5))
+plot3(ff(1,6:10),ff(2,6:10),ff(3,6:10))
+plot3(ff(1,1:5),ff(2,1:5),ff(3,1:5))
+hold on
+plot3(ff(1,6:10),ff(2,6:10),ff(3,6:10))
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cameratoolbar>localDrawnow', 'C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m', 176)" style="font-weight:bold">cameratoolbar>localDrawnow</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m',176,0)">line 176</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cameratoolbar>orbitLightgca', 'C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m', 296)" style="font-weight:bold">cameratoolbar>orbitLightgca</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m',296,0)">line 296</a>)
+    localDrawnow(hfig)
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cameratoolbar>up_callback', 'C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m', 1256)" style="font-weight:bold">cameratoolbar>up_callback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m',1256,0)">line 1256</a>)
+            orbitLightgca(hfig,haxes,scaled_deltaPix);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cameratoolbar>@(f,~)up_callback(f,haxes)', 'C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m', 1157)" style="font-weight:bold">cameratoolbar>@(f,~)up_callback(f,haxes)</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2017a\toolbox\matlab\graph3d\cameratoolbar.m',1157,0)">line 1157</a>)
+set(hfig, 'WindowButtonUpFcn', @(f,~)up_callback(f,haxes));
+} 
+Interrupt while evaluating Figure WindowButtonUpFcn.
+
+cls
+{Undefined function or variable 'cls'.
+} 
+clc

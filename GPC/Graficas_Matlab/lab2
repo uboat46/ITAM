@@ -1,0 +1,102 @@
+c = cos(5)
+
+c =
+
+    0.2837
+
+s = sin(5)
+
+s =
+
+   -0.9589
+
+r = [1 0 0 0; 0 c -s 0; 0 s c 0; 0 0 0 1]
+
+r =
+
+    1.0000         0         0         0
+         0    0.2837    0.9589         0
+         0   -0.9589    0.2837         0
+         0         0         0    1.0000
+
+x = [3;1;-1;1]
+
+x =
+
+     3
+     1
+    -1
+     1
+
+z=zeros(4,73)
+
+z =
+
+  Columns 1 through 19
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 20 through 38
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 39 through 57
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 58 through 73
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+z(:,1)=x;for k=1:72,z(:,k+1) = r*z(:,k);end
+help plot3d
+--- help for <strong>plot3</strong> ---
+
+ <strong>plot3</strong>  Plot lines and points in 3-D space.
+    <strong>plot3</strong>() is a three-dimensional analogue of PLOT().
+  
+    <strong>plot3</strong>(x,y,z), where x, y and z are three vectors of the same length,
+    plots a line in 3-space through the points whose coordinates are the
+    elements of x, y and z.
+  
+    <strong>plot3</strong>(X,Y,Z), where X, Y and Z are three matrices of the same size,
+    plots several lines obtained from the columns of X, Y and Z.
+  
+    Various line types, plot symbols and colors may be obtained with
+    <strong>plot3</strong>(X,Y,Z,s) where s is a 1, 2 or 3 character string made from
+    the characters listed under the PLOT command.
+  
+    <strong>plot3</strong>(x1,y1,z1,s1,x2,y2,z2,s2,x3,y3,z3,s3,...) combines the plots
+    defined by the (x,y,z,s) fourtuples, where the x's, y's and z's are
+    vectors or matrices and the s's are strings.
+  
+    Example: A helix:
+  
+        t = 0:pi/50:10*pi;
+        plot3(sin(t),cos(t),t);
+  
+    <strong>plot3</strong> returns a column vector of handles to lineseries objects, one
+    handle per line. The X,Y,Z triples, or X,Y,Z,S quads, can be 
+    followed by parameter/value pairs to specify additional 
+    properties of the lines.
+ 
+    See also <a href="matlab:help plot">plot</a>, <a href="matlab:help line">line</a>, <a href="matlab:help axis">axis</a>, <a href="matlab:help view">view</a>, <a href="matlab:help mesh">mesh</a>, <a href="matlab:help surf">surf</a>.
+
+    <a href="matlab:doc plot3">Reference page for plot3</a>
+
+plot3d(z(1,:),z(2,:),z(3,:))
+{Undefined function or variable 'plot3d'.
+} 
+plot3(z(1,:),z(2,:),z(3,:))

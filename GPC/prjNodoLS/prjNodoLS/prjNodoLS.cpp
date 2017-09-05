@@ -117,7 +117,6 @@ public:
 						s = SError;
 				break;
 			case S1:
-			case S5:
 				if (c == '(')
 				{
 					//s = S2;
@@ -129,6 +128,16 @@ public:
 						s = SF;
 					else
 						s = SError;
+				break;
+			case S5:
+				if (c == '(')
+				{
+					//s = S2;
+					f >> n;
+					s = S3;
+				}
+				else
+					s = SError;
 				break;
 			case S2:if ('0' <= c  && c <= '9')
 			{
