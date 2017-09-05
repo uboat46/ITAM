@@ -15,7 +15,7 @@ public class MiClasesita {
         System.out.println("Soy MiClasesita.main");
         if(args.length > 0) System.out.println("Argumentos:");
         for (String arg : args){
-            System.out.println("args["+i+"] = "+arg);
+            System.out.println("args["+i+"] = " + arg);
             i++;
         }
     }
