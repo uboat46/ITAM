@@ -21,5 +21,6 @@ public interface IServDisparo extends Remote
     public double deltaTStdDev() throws RemoteException;
     public long   deltaTMax()    throws RemoteException;
     public long   deltTMin()     throws RemoteException;
+    public long   cuantosCltes()     throws RemoteException;
 }    
 

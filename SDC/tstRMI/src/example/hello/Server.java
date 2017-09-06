@@ -15,15 +15,18 @@ public class Server implements Hello
     long cuantos = 0;
     String nomMaq = System.getenv("COMPUTERNAME");
     public Server() {}
+    @Override
     public String sayHello() 
     {
        cuantos++;
         System.out.println("Proporcionando el servicio no. " + cuantos);
        return "Este es el servicio no. " + cuantos + " desde " + nomMaq;
     }	
-    public static void main(String args[ ]) 
+    public static void main(String args[]) 
     {	
         String host = (args.length < 1) ? null : args[0];
+        System.out.println("HOST:"+host);
+        System.out.println("==========================================");
         System.out.println("Server, inciando con:");
         if( args.length == 0)
             System.out.println("Sin argumentos");

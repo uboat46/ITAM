@@ -92,7 +92,13 @@ public class ServidorDeDisparo implements IServDisparo
     @Override
     public synchronized long   deltaTMax()    throws RemoteException
     {
-        return lngDeltaTMax;
+        return lngDeltaTMax; 
+    }
+    
+    @Override
+    public synchronized long   cuantosCltes()    throws RemoteException
+    {
+        return cuantosCltes;
     }
     
     @Override

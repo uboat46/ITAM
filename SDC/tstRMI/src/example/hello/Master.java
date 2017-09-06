@@ -42,11 +42,11 @@ public class Master
         try
         {
           System.out.println("================================================");  
-          System.out.println("    cantidad de clientes:");
-          System.out.println("media de tiempo de ciclo:");
-          System.out.println(" dev std tiempo de ciclo:");
-          System.out.println("  tiempo de ciclo máximo:");
-          System.out.println("  tiempo de ciclo mínimo:");
+          System.out.println("    cantidad de clientes: " + servDisparo.cuantosCltes());
+          System.out.println("media de tiempo de ciclo: " + servDisparo.deltaTmedia());
+          System.out.println(" dev std tiempo de ciclo: " + servDisparo.deltaTStdDev());
+          System.out.println("  tiempo de ciclo máximo: " + servDisparo.deltaTMax());
+          System.out.println("  tiempo de ciclo mínimo: " + servDisparo.deltTMin());
         }
         catch( Exception e )
         {

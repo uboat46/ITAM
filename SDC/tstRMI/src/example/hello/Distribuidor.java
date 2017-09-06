@@ -4,6 +4,11 @@
  */
 package example.hello;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author RGGH
@@ -43,10 +48,14 @@ public class Distribuidor
                 Class cArgs[] = new Class[1];
                 cArgs[0] = String[].class;
                 Class cl;
-                cl = Class.forName(args[0]);  
+                cl = Class.forName("example.hello."+args[0]);  
                 Method m = cl.getMethod("main", cArgs);
-                m.invoke(cl,(Object)args);
-            } catch (ClassNotFoundException | NoSuchMethodException | SecurityException ex) {
+                m.invoke(cl,(Object)argsPar);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Distribuidor.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NoSuchMethodException ex){
+                Logger.getLogger(Distribuidor.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SecurityException ex){
                 Logger.getLogger(Distribuidor.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
