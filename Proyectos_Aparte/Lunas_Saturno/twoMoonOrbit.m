@@ -1,4 +1,4 @@
-function [] = twoMoonOrbit(mD1, oP1, mD2, oP2, n, vel)
+function [] = twoMoonOrbit(mD1, oP1, mD2, oP2, n, vel, times)
 
 deltaD1 = 360/ (oP1*24)
 deltaD2 = 360/ (oP2*24)
@@ -14,11 +14,11 @@ r(1,5) = mD2 * sind(0);
 r(1,6) = 0;
 
 for i= 2:n
-    r(i,3) = r(i-1,3) + (deltaD1*3);
+    r(i,3) = r(i-1,3) + (deltaD1*times);
     r(i,1) = mD1 * cosd(r(i,3));
     r(i,2) = mD1 * sind(r(i,3));
     
-    r(i,6) = r(i-1,6) + (deltaD2*3);
+    r(i,6) = r(i-1,6) + (deltaD2*times);
     r(i,4) = mD2 * cosd(r(i,6));
     r(i,5) = mD2 * sind(r(i,6));
 end

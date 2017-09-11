@@ -10,10 +10,11 @@ orbit = [15520 0.942422;
           12952000 550.48];
 
       m1 = 1;
-      m2 = 9;
-      t = 8000;
-      vel = 0.2;
-twoMoonOrbit(orbit(m1,1), orbit(m1,2), orbit(m2,1), orbit(m2,2), t, vel);
+      m2 = 3;
+      t = 2000;
+      vel = 0.002;
+      times = 22.5;
+twoMoonOrbit(orbit(m1,1), orbit(m1,2), orbit(m2,1), orbit(m2,2), t, vel, times);
 
 % for i=1:length(orbit)
 %     for j=1:length(orbit)
