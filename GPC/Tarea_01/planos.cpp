@@ -115,20 +115,14 @@ public:
 
    // EJER 3)  Construir el plano a partir de los tres puntos v1, v2 y v3.
    clsPlano3D( clsVector3D v1, clsVector3D v2, clsVector3D v3 )
-   {  // por lo pronto un dummy que entrega el 5x + 5y + 5z + 5 = 0.
-      //Para ello sean p1,p2 y p3 los puntos. Con ellos construyamos dos vectores:
-      //v1 = p2 – p1
-      //v2 = p3 – p1
-      //y obtengamos su producto cruz: g = v1 x v2
+   {  
       clsVector3D p1 = v2 - v1;
       clsVector3D p2 = v3 - v1;
       clsVector3D s = p1 * p2;
-      //s.x( v1.x() + v2.x());
       dbl_A = s.x();
       dbl_B = s.y();
       dbl_C = s.z();
       dbl_D = 5.0;
-	    //dbl_A = dbl_B = dbl_C = dbl_D = 5.0;
    }
 	  
    void A( double unA ) { dbl_A = unA; }
@@ -147,7 +141,7 @@ public:
    friend ostream& operator <<( ostream& os, clsPlano3D& p )
    {
      //os << "Este es el dummy de la impresi�n del plano..." << endl;
-     os << p.A() << "x " << p.B() << "y " << p.C() << "z " << p.D() << " = 0" << endl;
+     os << "(" << p.A() << ")x +(" << p.B() << ")y +(" << p.C() << ")y " << p.D() << " = 0" << endl;
      return os;
    }
    
@@ -155,7 +149,7 @@ public:
    friend istream& operator >>( istream& is, clsPlano3D& p )
    { 
      clsPlano3D w;
-	 p = w;
+	   p = w;
 	 return is;
    }
 
