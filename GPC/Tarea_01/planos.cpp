@@ -1,24 +1,25 @@
 // planos.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-/* En este código usted debe agregar las sentencias 
+//#include "stdafx.h"
+/* En este cï¿½digo usted debe agregar las sentencias 
    necesarias ( funciones, operadores y script de pruebas )
    para: 
    // EJER 1) operador de entrada del clsVector3D
    // EJER 2) operador Producto Cruz de dos clsVector3D
    // EJER 3) Construir el plano a partir de los tres puntos v1, v2 y v3.
-   // EJER 4) Impresión del plano A * x + B * y + C * z + D = 0.
+   // EJER 4) Impresiï¿½n del plano A * x + B * y + C * z + D = 0.
    // EJER 5) Lectura del plano como A * x + B * y + c * z + D = 0. 
-   // EJER 6) Obtener el punto que resulta de la intersección de tres planos 
+   // EJER 6) Obtener el punto que resulta de la intersecciï¿½n de tres planos 
 
   En los casos de los operadores de lectura agregue lectura de input streams
   definidos en base a cadenas de caracteres, de tal forma que pueda probar
-  de manera rápida sus operadores.
+  de manera rï¿½pida sus operadores.
 
 */
 
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 // ============================================
 class clsVector3D
 {
@@ -54,6 +55,16 @@ public:
 	  return s;
 	}
 
+  friend clsVector3D operator -( clsVector3D a, clsVector3D b )
+	{
+      clsVector3D s;
+      s.x( a.x() - b.x() );
+	    s.y( a.y() - b.y() );
+	    s.z( a.z() - b.z() );
+
+	  return s;
+  }
+  
 	friend clsVector3D operator * ( double esc, clsVector3D v )
 	{
       clsVector3D w;
@@ -74,7 +85,7 @@ public:
 	friend istream& operator >>( istream& is, clsVector3D& v )
 	{
       // por lo pronto solo es un dummy que regresa el (0,1.0,2.0)
-      clsVector3D w;
+    clsVector3D w;
 	  w.y(1.0);
 	  w.z(2.0);
 
@@ -84,12 +95,10 @@ public:
   // EJER 2) operador Producto Cruz de dos clsVector3D
 	friend clsVector3D operator *( clsVector3D& a, clsVector3D& b )
 	{
-      // por lo pronto un dummy que regresa el ( -1.0,-2.0,-3.0 )
       clsVector3D w;
-      w.x( -1.0 );
-	  w.y( -2.0 );
-	  w.z( -3.0 );
-
+      w.x(a.y() * b.z() - b.y() * a.z());
+      w.y(b.x() * a.z() - a.x() * b.z());
+      w.z(a.x() * b.y() - a.y() * b.x());
 	  return w;
 	}
 };
@@ -106,8 +115,20 @@ public:
 
    // EJER 3)  Construir el plano a partir de los tres puntos v1, v2 y v3.
    clsPlano3D( clsVector3D v1, clsVector3D v2, clsVector3D v3 )
-   {  // por lo pronto un dummy que entrega el 5x + 5y + 5z + 5 = 0. 
-	  dbl_A = dbl_B = dbl_C = dbl_D = 5.0;
+   {  // por lo pronto un dummy que entrega el 5x + 5y + 5z + 5 = 0.
+      //Para ello sean p1,p2 y p3 los puntos. Con ellos construyamos dos vectores:
+      //v1 = p2 â€“ p1
+      //v2 = p3 â€“ p1
+      //y obtengamos su producto cruz: g = v1 x v2
+      clsVector3D p1 = v2 - v1;
+      clsVector3D p2 = v3 - v1;
+      clsVector3D s = p1 * p2;
+      //s.x( v1.x() + v2.x());
+      dbl_A = s.x();
+      dbl_B = s.y();
+      dbl_C = s.z();
+      dbl_D = 5.0;
+	    //dbl_A = dbl_B = dbl_C = dbl_D = 5.0;
    }
 	  
    void A( double unA ) { dbl_A = unA; }
@@ -119,10 +140,14 @@ public:
    void C( double unC ) { dbl_C = unC; }
    double C() { return dbl_C; }
 
-   // EJER 4) Impresión del plano A * x + B * y + c * z + D = 0.
+   void D( double unD ) { dbl_D = unD; }
+   double D() { return dbl_D; }
+
+   // EJER 4) Impresiï¿½n del plano A * x + B * y + c * z + D = 0.
    friend ostream& operator <<( ostream& os, clsPlano3D& p )
    {
-     os << "Este es el dummy de la impresión del plano..." << endl;
+     //os << "Este es el dummy de la impresiï¿½n del plano..." << endl;
+     os << p.A() << "x " << p.B() << "y " << p.C() << "z " << p.D() << " = 0" << endl;
      return os;
    }
    
@@ -134,7 +159,7 @@ public:
 	 return is;
    }
 
-   // EJER 6) Obtener el punto que resulta de la intersección de tres planos 
+   // EJER 6) Obtener el punto que resulta de la intersecciï¿½n de tres planos 
    friend clsVector3D interseccion( clsPlano3D P1, clsPlano3D P2, clsPlano3D P3 )
    {
      // va el dummy con el ( 100.0 ,200.0, 300.0)
