@@ -1,3 +1,3 @@
-cd C:\155902\ITAM\SDC\SimpleRMIAutonomo
+cd C:\Users\LABDISMOV\Desktop\ITAM\SDC\SimpleRMIAutonomo
 cls
 

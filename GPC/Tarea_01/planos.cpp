@@ -41,7 +41,7 @@ public:
 
     friend ostream& operator <<( ostream& os, clsVector3D& p )
 	{
-      os << "( " << p.x() << "," << p.y() << "," << p.z() << " )";
+      os << "( " << p.x() << ", " << p.y() << ", " << p.z() << " )";
 	  return os;
 	}
 
@@ -140,7 +140,6 @@ public:
    // EJER 4) Impresi�n del plano A * x + B * y + c * z + D = 0.
    friend ostream& operator <<( ostream& os, clsPlano3D& p )
    {
-     //os << "Este es el dummy de la impresi�n del plano..." << endl;
      os << "(" << p.A() << ")x +(" << p.B() << ")y +(" << p.C() << ")y " << p.D() << " = 0" << endl;
      return os;
    }
@@ -155,7 +154,27 @@ public:
 
    // EJER 6) Obtener el punto que resulta de la intersecci�n de tres planos 
    friend clsVector3D interseccion( clsPlano3D P1, clsPlano3D P2, clsPlano3D P3 )
-   {
+   { 
+    // Para ello defina una rutina que obtenga el determinante de un sistema de 3 x 3:
+    // Sea el sistema dado por los tres vectores ( en forma horizontal ) h1,h2,h3. El determinante de tal sistema lo obtenemos como:
+    
+    //   Det(h1,h2,h3)	=	   h1.x * ( h2.y * h3.z – h2.z * h3.y )
+    //  - h1.y * ( h2.x * h3.z – h2.z * h3.x )
+    //     h1.z * ( h2.x * h3.y – h2.y * h3.x )
+    
+    // para encontrar los valores de x,y,z que satisfacen los tres planos lo que debe hacer, siguiendo la regla de Kramer es
+    
+    //   x = kram( Plano1, Plano2,Plano3, 0 ) / DetPlanos
+    
+    //   y = kram( Plano1,Plano2,Plano3, 1 ) / DetPlanos
+    
+    //   z = kram( Plano1, Plano2, Plano3, 2 ) / DetPlanos.
+    
+    // Siendo:
+    
+    //   DetPlanos es el valor del determinante de los vectores (A,B,C) de cada uno de los planos, en disposición horizontal 
+    //   kram(Plano1,Plano2,Plano3,i ) obtiene el determinante de la disposición de los vectores como en DetPlanos, pero ahora se sustituye la columna i ( i de 0 a 2 ) de la matriz de los planos por la columna dada por los valores de D de cada plano.
+    
      // va el dummy con el ( 100.0 ,200.0, 300.0)
      clsVector3D a;
      a.x( 100.0 );
@@ -163,6 +182,12 @@ public:
 	 a.z( 300.0 );
 	 return a;
    }
+
+   friend double Det( clsVector3D a, clsVector3D b, clsVector3D c)
+   {
+      return a.x() * ( b.y() * c.z() - b.z() * c.y() ) - a.y() * ( b.x() * c.z() - b.z() * c.x() ) + a.z() * ( b.x() * c.y() - b.y() * c.x() );
+   }
+
 };
 // =============================================
 void main()
