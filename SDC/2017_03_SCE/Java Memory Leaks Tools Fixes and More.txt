@@ -1,0 +1,111 @@
+De:	DZone Daily Digest <mailer@dzone.com>
+Enviado el:	lunes, 14 de agosto de 2017 11:56 a.m.
+Para:	rgamboa@itam.mx
+Asunto:	Java Memory Leaks: Tools, Fixes, and More
+
+Plus: Do Product Owners Need Technical Skills?, Stack vs. Heap: Understanding Java Memory Allocation, and 5 Things You May Not Have Known About jOOQ
+ 
+August 14, 2017
+
+
+
+ 
+DZone Daily Picks
+ 
+
+ 
+
+ 
+Gartner Magic 
+Quadrant for 
+Operational 
+DBMS    Download 
+the Free Gartner 
+Report › 
+
+ 
+ 
+Java Memory Leaks: 
+Tools, Fixes, and 
+More    Read › 
+
+ 
+ 
+Do Product Owners 
+Need Technical 
+Skills?    Read › 
+
+ 
+ 
+Stack vs. Heap: 
+Understanding Java 
+Memory 
+Allocation    Read › 
+
+ 
+ 
+5 Things You May 
+Not Have Known 
+About jOOQ    Read › 
+
+ 
+ 
+Using Machine 
+Learning to Build 
+Conversations    Read 
+› 
+
+ 
+ 
+[Hiring] JMeter 
+Technical Writer  
+Full Time , Remote  
+Apply Now › 
+
+ 
+ 
+Cypher: Write Fast 
+and Furious    Read › 
+
+ 
+ 
+Two Great Web 
+Drivers to Use With 
+Selenium    Read › 
+
+ 
+ 
+Is Docker the End of 
+Traditional 
+Application Release 
+Management?    Read 
+› 
+
+ 
+ 
+The HTTP Series 
+(Part 5): 
+Security    Read › 
+
+ 
+ 
+5 Things We've 
+Learned About 
+Monitoring 
+Containers    Read › 
+
+
+ 
+
+
+
+
+View in browser  |   Help  |   Manage Subscriptions  |   Send to a Friend  
+DZone 150 Preston Executive Dr, Cary, NC 27513 © 2016 DZone, Inc.
+
+
+ 
+
+ 
+Libre de virus. www.avg.com 
+
