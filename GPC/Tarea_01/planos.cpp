@@ -29,7 +29,15 @@ public:
 	clsVector3D()
 	{ 
       dbl_x = dbl_y = dbl_z = 0.0;
-	}
+  }
+
+  clsVector3D(double x, double y, double z)
+	{ 
+      dbl_x = x; 
+      dbl_y = y; 
+      dbl_z = z;
+  }
+  
 	void x( double unX ) { dbl_x = unX; }
 	double x() { return dbl_x; }
 
@@ -84,7 +92,7 @@ public:
    // EJER 1) operador de entrada del clsVector3D:
 	friend istream& operator >>( istream& is, clsVector3D& v )
 	{
-	  enum edo { S0, S1, S2, S3, S4, S5, SF, SError };
+	  enum edo { S0, S1, SF, SError };
 	  enum edo s = S0;
 	  char c;
 	  int i = 0;
@@ -97,14 +105,15 @@ public:
 			switch (s)
 			{
 			case S0:
-      if (c == '(')
-      {
-					s = S1;
-					is >> n;
-			}
+        if (c == '(')
+        {
+            s = S1;
+            is >> n;
+            if(n != n) s = SError;
+        }
         else
 					s = SError;
-				break;
+				  break;
 			case S1:
 				if (c == ',')
 				{
@@ -117,7 +126,8 @@ public:
 						w.y(n);
 						break;
 					}
-					is >> n;
+          is >> n;
+          if(n != n) s = SError;
 				}
 				else if (c == ')' && i == 2)
 					{
@@ -126,7 +136,7 @@ public:
 					}
 					else
 						s = SError;
-				break;
+        break;
 			}
 		}
 		if (s == SF)
@@ -134,7 +144,7 @@ public:
 		else
 		{
 			cout << "error en la cadena\n";
-			throw 5;
+			//throw 5;
 		}
 	  v = w;
 	  return is;
@@ -169,7 +179,7 @@ public:
       dbl_A = s.x();
       dbl_B = s.y();
       dbl_C = s.z();
-      dbl_D = 5.0;
+      dbl_D = -1 * ((dbl_A * v1.x()) + (dbl_B * v1.y()) + (dbl_C * v1.z()) );
    }
 	  
    void A( double unA ) { dbl_A = unA; }
@@ -187,54 +197,99 @@ public:
    // EJER 4) Impresi�n del plano A * x + B * y + c * z + D = 0.
    friend ostream& operator <<( ostream& os, clsPlano3D& p )
    {
-     os << "(" << p.A() << ")x +(" << p.B() << ")y +(" << p.C() << ")z " << p.D() << " = 0" << endl;
+     os << "(" << p.A() << ")x +(" << p.B() << ")y +(" << p.C() << ")z +(" << p.D() << ") = 0" << endl;
      return os;
    }
    
    // EJER 5) Lectura del plano como A * x + B * y + c * z + D = 0. 
    friend istream& operator >>( istream& is, clsPlano3D& p )
    { 
-     clsPlano3D w;
-	   p = w;
+    enum edo { S0, S1, SF, SError };
+	  enum edo s = S0;
+	  char c;
+	  double n;
+    clsPlano3D w;
+    int i = 0;
+    while ((s != SF) && (s != SError))
+		{
+      is >> n;
+      if( n != n ) s = SError;
+			is.get(c);
+			if (is.eof()) c = '\0';
+			switch (s)
+			{
+        case S0:
+          switch(i++)
+          {
+            case 0:
+              w.A(n);
+              break;
+            case 1:
+              w.B(n);
+              break;
+            case 2:
+              w.C(n);
+              break;
+            case 3:
+              w.D(n);
+              s = SF;
+              break;
+          }
+          break;
+      }
+    }
+    if (s == SF)
+      cout << "todo ok\n";
+    else
+    {
+      cout << "error en la cadena\n";
+      //throw 5;
+    }
+   p = w;
 	 return is;
-   }
+  }
+
+  friend double Det( clsVector3D a, clsVector3D b, clsVector3D c)
+  {
+     return a.x() * ( b.y() * c.z() - b.z() * c.y() ) - a.y() * ( b.x() * c.z() - b.z() * c.x() ) + a.z() * ( b.x() * c.y() - b.y() * c.x() );
+  }
+
+  friend double DetPlanos( clsPlano3D a, clsPlano3D b, clsPlano3D c)
+  {
+     return Det( clsVector3D(a.A(), a.B(), a.C()), clsVector3D(b.A(), b.B(), b.C()), clsVector3D(c.A(), c.B(), c.C()) );
+  }
+
+  friend double kram( clsPlano3D a, clsPlano3D b, clsPlano3D c, int i)
+  {
+     double res;
+     switch(i)
+     {
+       case 0:
+         res = Det( clsVector3D(a.D(), a.B(), a.C()), clsVector3D(b.D(), b.B(), b.C()), clsVector3D(c.D(), c.B(), c.C()) );
+         break;
+       case 1:
+         res = Det( clsVector3D(a.A(), a.D(), a.C()), clsVector3D(b.A(), b.D(), b.C()), clsVector3D(c.A(), c.D(), c.C()) );
+         break;
+       case 2:
+         res = Det( clsVector3D(a.A(), a.B(), a.D()), clsVector3D(b.A(), b.B(), b.D()), clsVector3D(c.A(), c.B(), c.D()) );
+         break;
+     }
+     return res; 
+  }
 
    // EJER 6) Obtener el punto que resulta de la intersecci�n de tres planos 
    friend clsVector3D interseccion( clsPlano3D P1, clsPlano3D P2, clsPlano3D P3 )
    { 
-    // Para ello defina una rutina que obtenga el determinante de un sistema de 3 x 3:
-    // Sea el sistema dado por los tres vectores ( en forma horizontal ) h1,h2,h3. El determinante de tal sistema lo obtenemos como:
-    
-    //   Det(h1,h2,h3)	=	   h1.x * ( h2.y * h3.z – h2.z * h3.y )
-    //  - h1.y * ( h2.x * h3.z – h2.z * h3.x )
-    //     h1.z * ( h2.x * h3.y – h2.y * h3.x )
-    
-    // para encontrar los valores de x,y,z que satisfacen los tres planos lo que debe hacer, siguiendo la regla de Kramer es
-    
-    //   x = kram( Plano1, Plano2,Plano3, 0 ) / DetPlanos
-    
-    //   y = kram( Plano1,Plano2,Plano3, 1 ) / DetPlanos
-    
-    //   z = kram( Plano1, Plano2, Plano3, 2 ) / DetPlanos.
-    
-    // Siendo:
-    
-    //   DetPlanos es el valor del determinante de los vectores (A,B,C) de cada uno de los planos, en disposición horizontal 
-    //   kram(Plano1,Plano2,Plano3,i ) obtiene el determinante de la disposición de los vectores como en DetPlanos, pero ahora se sustituye la columna i ( i de 0 a 2 ) de la matriz de los planos por la columna dada por los valores de D de cada plano.
-    
-     // va el dummy con el ( 100.0 ,200.0, 300.0)
-     clsVector3D a;
-     a.x( 100.0 );
-	 a.y( 200.0 );
-	 a.z( 300.0 );
-	 return a;
-   }
+    clsVector3D a;
+    double det;
 
-   friend double Det( clsVector3D a, clsVector3D b, clsVector3D c)
-   {
-      return a.x() * ( b.y() * c.z() - b.z() * c.y() ) - a.y() * ( b.x() * c.z() - b.z() * c.x() ) + a.z() * ( b.x() * c.y() - b.y() * c.x() );
+    det = DetPlanos(P1, P2, P3);
+    a.x( kram(P1, P2, P3, 0) / det );
+	  a.y( kram(P1, P2, P3, 1) / det );
+    a.z( kram(P1, P2, P3, 2) / det );
+     
+	  return a;
    }
-
 };
 // =============================================
 void main()
@@ -261,9 +316,18 @@ void main()
 
   cout << " a * b = " << a << " * " << b << " = " << a * b << endl;
 
-  clsPlano3D q1,q2,q3;
+  clsVector3D x(1,0,0), y(0,1,0), z(0,0,1);
+  clsVector3D r(1,2,5), w(1,2,3), e(0,2,4);
 
-  cout << q1 << endl;
+  clsPlano3D p(x, y, z);
+
+  cout << p << endl;
+
+  clsPlano3D q1(x, y, z), q2(r, w, e),q3;
+
+  cin >> q3;
+
+  cout << "q3 = " << q3 << endl;
 
   cout << "Interseccion " << interseccion( q1,q2,q3 ) << endl;
 

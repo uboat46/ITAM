@@ -1,0 +1,53 @@
+===============================================================================================
+Reglas de Negocio (Por el momento):
+===============================================================================================
+1: Alta Alumno
+2:Alta Profesor
+3:Alta Baile
+4:Alta Curso
+5:Busca Clave Alumno
+6:Busca Clave Profesor
+7:Busca Clave Baile
+8:Busca Clave Curso
+9:Inscribir Alumno a Curso
+10:Asignar Profesor(es) a Curso
+11:Pasar lista Asistencia a una sesion del Curso
+12:Acta Calificaciones del Curso
+13:Pago Cuota Alumno
+14:Pago a Profesor
+15:Kardex del Alumno
+
+==============================================================================================
+				        Ejemplo
+==============================================================================================
+            (1:Alta Alumno)
+===========================================
+
+Descripción (Happy Path) :
+============================
+Da de alta un alumno a partir de su nombre, apellido paterno, apellido materno. El servicios asigna una clave
+al alumno y debe regresar un Mensaje:
+
+{ 
+  Mensaje(boolean, String, int)
+}
+
+Datos:
+============================ 
+     {
+	String nombre
+	String apPaterno
+	String apMaterno
+     }
+Casos:
+============================
+1)Se da de alta : Mensaje(true,"clave alumno", 1)
+
+2)Alumno ya en base : Mensaje(false, "Alumno ya existente", 2)
+
+3)Conexion no establecida en web service : Mensaje(false, "Error de conexion", 3)
+
+4)Conexion no establecida base datos : Mensaje(false, "Error de conexion", 4)
+... 
+
+===============================================================================================
