@@ -1,4 +1,4 @@
-// planos.cpp : Defines the entry point for the console application.
+﻿// planos.cpp : Defines the entry point for the console application.
 //
 
 //#include "stdafx.h"
@@ -84,11 +84,58 @@ public:
    // EJER 1) operador de entrada del clsVector3D:
 	friend istream& operator >>( istream& is, clsVector3D& v )
 	{
-      // por lo pronto solo es un dummy que regresa el (0,1.0,2.0)
-    clsVector3D w;
-	  w.y(1.0);
-	  w.z(2.0);
-
+	  enum edo { S0, S1, S2, S3, S4, S5, SF, SError };
+	  enum edo s = S0;
+	  char c;
+	  int i = 0;
+	  double n;
+          clsVector3D w;
+          while ((s != SF) && (s != SError))
+		{
+			is.get(c);
+			if (is.eof()) c = '\0';
+			switch (s)
+			{
+			case S0:
+      if (c == '(')
+      {
+					s = S1;
+					is >> n;
+			}
+        else
+					s = SError;
+				break;
+			case S1:
+				if (c == ',')
+				{
+					switch(i++)
+					{
+				            case 0:
+						w.x(n);
+						break;
+					    case 1:
+						w.y(n);
+						break;
+					}
+					is >> n;
+				}
+				else if (c == ')' && i == 2)
+					{
+						w.z(n);
+						s = SF;
+					}
+					else
+						s = SError;
+				break;
+			}
+		}
+		if (s == SF)
+			cout << "todo ok\n";
+		else
+		{
+			cout << "error en la cadena\n";
+			throw 5;
+		}
 	  v = w;
 	  return is;
 	}
@@ -140,7 +187,7 @@ public:
    // EJER 4) Impresi�n del plano A * x + B * y + c * z + D = 0.
    friend ostream& operator <<( ostream& os, clsPlano3D& p )
    {
-     os << "(" << p.A() << ")x +(" << p.B() << ")y +(" << p.C() << ")y " << p.D() << " = 0" << endl;
+     os << "(" << p.A() << ")x +(" << p.B() << ")y +(" << p.C() << ")z " << p.D() << " = 0" << endl;
      return os;
    }
    
