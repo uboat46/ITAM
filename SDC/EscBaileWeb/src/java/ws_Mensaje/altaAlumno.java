@@ -39,7 +39,7 @@ public class altaAlumno {
             gestor.conectaBD("rafa", "rafa");
             if(gestor.conectado()){
                 String arrCampos[] = {"clvAlumno","nombre","apPaterno","apMaterno"};
-                String arrDatos[] = {"8888",nombre,apPat,apMat};
+                String arrDatos[] = {""+((int)(Math.random()*100)),nombre,apPat,apMat};
                 res = gestor.altaAlumno(arrCampos, arrDatos);
                 m.setBlnRes(res);
                 m.setIntRes(1);
