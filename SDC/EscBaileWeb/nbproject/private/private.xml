@@ -5,6 +5,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/155902/ITAM/SDC/EscBaileWeb/src/java/ws_Mensaje/altaAlumno.java</file>
+            <file>file:/C:/155902/ITAM/SDC/EscBaileWeb/src/java/mensajes/ClsMensaje.java</file>
+            <file>file:/C:/155902/ITAM/SDC/EscBaileWeb/src/java/escdebaile/ClsConexion.java</file>
+            <file>file:/C:/155902/ITAM/SDC/EscBaileWeb/src/java/escdebaile/ClsCampoBD.java</file>
+            <file>file:/C:/155902/ITAM/SDC/EscBaileWeb/src/java/escdebaile/ClsGestorEscBaile.java</file>
         </group>
     </open-files>
 </project-private>

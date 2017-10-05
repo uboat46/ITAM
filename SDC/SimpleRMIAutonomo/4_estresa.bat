@@ -7,7 +7,7 @@ echo on
 set cb=%cd%\tstRMI.jar
 
 if [%1] NEQ [] goto conclientes
-estresador 20 -Djava.rmi.server.codebase=file:%cb% -jar %cb% Cliente localhost 200
+estresador %1 -Djava.rmi.server.codebase=file:%cb% -jar %cb% Cliente localhost 200
 goto fin
 
 :conclientes

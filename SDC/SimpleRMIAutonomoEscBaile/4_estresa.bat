@@ -4,10 +4,10 @@ echo uso:
 echo 4_estresa NumCltes NumSolicitudesPorClte HOSTNAME (en caso de omitirlo se usa localhost, si se omiten los clientes usa 15 y el localhost)
 echo on
 
-set cb=%cd%\ClienteEscBaile.jar
+set cb=%cd%\tstRMI.jar
 
 if [%1] NEQ [] goto conclientes
-estresador 20 -Djava.rmi.server.codebase=file:%cb% -jar %cb% clienteescbaile.ClienteEscBaile localhost 200
+estresador 20 -Djava.rmi.server.codebase=file:%cb% -cp %cb%;%cd%\ClienteEscBaile.jar example.hello.Distribuidor clienteescbaile.ClienteEscBaile localhost 200
 goto fin
 
 :conclientes
