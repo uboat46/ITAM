@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\lib\glfw\examples\gears.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\lib\glfw\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB15E4C3-7CF9-3492-B2ED-4BE705B6386D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

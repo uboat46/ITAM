@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\CMakeLists.txt" />
+    <CustomBuild Include="C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\CMakeFiles\c200982b313534a4f30d427a7e143266\release.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\CMakeFiles\release" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{91A68B85-F701-3362-BD6D-6056B9DB8B55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

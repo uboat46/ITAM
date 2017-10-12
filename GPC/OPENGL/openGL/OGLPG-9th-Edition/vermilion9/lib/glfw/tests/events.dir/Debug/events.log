@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/lib/glfw/tests/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/vermilion9/lib/glfw/tests/CMakeFiles/generate.stamp is up-to-date.
+  events.c
+  getopt.c
+  Generando código...
+  events.vcxproj -> C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\bin\events.exe
+  events.vcxproj -> C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/bin/events.pdb (Full PDB)

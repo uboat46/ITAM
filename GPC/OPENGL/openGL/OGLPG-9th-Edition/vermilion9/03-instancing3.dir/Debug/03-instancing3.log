@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/vermilion9/CMakeFiles/generate.stamp is up-to-date.
+  03-instancing3.cpp
+C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\include\vmath.h(1022): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  03-instancing3.vcxproj -> C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\bin\03-instancing3_d.exe
+  03-instancing3.vcxproj -> C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/bin/03-instancing3_d.pdb (Full PDB)

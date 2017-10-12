@@ -14,7 +14,7 @@ enum Attrib_IDs { vPosition = 0 };
 GLuint  VAOs[NumVAOs];
 GLuint  Buffers[NumBuffers];
 
-const GLuint  NumVertices = 6;
+const GLuint  NumVertices = 9;
 
 //----------------------------------------------------------------------------
 //
@@ -27,9 +27,10 @@ init( void )
     glGenVertexArrays( NumVAOs, VAOs );
     glBindVertexArray( VAOs[Triangles] );
 
-    GLfloat  vertices[NumVertices][2] = {
-        { -0.90f, -0.90f }, {  0.85f, -0.90f }, { -0.90f,  0.85f },  // Triangle 1
-        {  0.90f, -0.85f }, {  0.90f,  0.90f }, { -0.85f,  0.90f }   // Triangle 2
+    GLfloat  vertices[NumVertices][3] = {
+        { -0.20f, -0.20f }, {  0.15f, -0.20f }, { -0.20f,  0.15f },  // Triangle 1
+        {  0.90f, -0.85f }, {  0.90f,  0.90f }, { -0.85f,  0.90f },   // Triangle 2
+		{  -0.90f, -0.85f },{ -0.90f,  -0.90f },{ -0.85f,  -0.90f }   // Triangle 2
     };
 
     glCreateBuffers( NumBuffers, Buffers );
@@ -59,12 +60,13 @@ init( void )
 void
 display( void )
 {
-    static const float black[] = { 0.0f, 0.0f, 0.0f, 0.0f };
+    static const float black[] = { 0.5f, 0.5f, 0.5f, 0.5f };
 
     glClearBufferfv(GL_COLOR, 0, black);
 
     glBindVertexArray( VAOs[Triangles] );
     glDrawArrays( GL_TRIANGLES, 0, NumVertices );
+	//glDrawArrays(GL_TRIANGLES, 0, NumVertices);
 }
 
 //----------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\vermilion9\CMakeFiles\f1bd25cfe5da8f6f9a036784c1a1f242\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C717BD33-AA2B-3E69-AA7C-CDC47A82F1C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

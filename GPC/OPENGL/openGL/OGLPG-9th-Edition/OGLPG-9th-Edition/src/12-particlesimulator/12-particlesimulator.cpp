@@ -20,7 +20,7 @@
 enum
 {
     PARTICLE_GROUP_SIZE     = 1024,
-    PARTICLE_GROUP_COUNT    = 8192,
+    PARTICLE_GROUP_COUNT    = 5000,
     PARTICLE_COUNT          = (PARTICLE_GROUP_SIZE * PARTICLE_GROUP_COUNT),
     MAX_ATTRACTORS          = 64
 };
@@ -138,13 +138,13 @@ void main(void)
     for (i = 0; i < 4; i++)
     {
         vec3 dist = (attractor[i].xyz - pos.xyz);
-        vel.xyz += dt * dt * attractor[i].w * normalize(dist) / (dot(dist, dist) + 10.0);
+        vel.xyz += dt * dt * attractor[i].w * normalize(dist) / (dot(dist, dist) + 50.0);
     }
 
     if (pos.w <= 0.0)
     {
-        pos.xyz = -pos.xyz * 0.01;
-        vel.xyz *= 0.01;
+        pos.xyz = -pos.xyz * 0.5;
+        vel.xyz *= 30.0;
         pos.w += 1.0f;
     }
 

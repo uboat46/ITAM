@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/vermilion9/CMakeFiles/generate.stamp is up-to-date.
+  06-cubemap.cpp
+c:\155902\itam\gpc\opengl\opengl\oglpg-9th-edition\oglpg-9th-edition\include\vmath.h(1022): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  06-cubemap.vcxproj -> C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\bin\06-cubemap_d.exe
+  06-cubemap.vcxproj -> C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/bin/06-cubemap_d.pdb (Full PDB)

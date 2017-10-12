@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/lib/glfw/examples/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/vermilion9/lib/glfw/examples/CMakeFiles/generate.stamp is up-to-date.
+  gears.c
+  gears.vcxproj -> C:\155902\ITAM\GPC\OPENGL\openGL\OGLPG-9th-Edition\OGLPG-9th-Edition\bin\gears.exe
+  gears.vcxproj -> C:/155902/ITAM/GPC/OPENGL/openGL/OGLPG-9th-Edition/OGLPG-9th-Edition/bin/gears.pdb (Full PDB)
