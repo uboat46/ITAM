@@ -12,6 +12,15 @@ package tstjson;
 public class ClsPersona {
     private String nombre = null;
     private int edad = 0;
+    private int[] numeros = null;
+
+    public int[] getNumeros() {
+        return numeros;
+    }
+
+    public void setNumeros(int[] numeros) {
+        this.numeros = numeros;
+    }
 
     public String getNombre() {
         return nombre;
