@@ -12,13 +12,22 @@ package tstjson;
 public class ClsPersona {
     private String nombre = null;
     private int edad = 0;
-    private int[] numeros = null;
+    private byte[] numeros = null;
+    private ClsAttr atrr = null;
 
-    public int[] getNumeros() {
+    public ClsAttr getAtrr() {
+        return atrr;
+    }
+
+    public void setAtrr(ClsAttr atrr) {
+        this.atrr = atrr;
+    }
+
+    public byte[] getNumeros() {
         return numeros;
     }
 
-    public void setNumeros(int[] numeros) {
+    public void setNumeros(byte[] numeros) {
         this.numeros = numeros;
     }
 
