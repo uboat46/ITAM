@@ -68,6 +68,14 @@ public class TstJSON {
                 Class[] cls = me.getParameterTypes();
                 Class<?> cl = cls[0];
                 
+                /*
+                Checks for null parameters and do nothing
+                this should set this parameters as null
+                */
+                boolean isNull = false;
+                if(parameter == null){
+                    isNull = true;
+                }
                 
                 /*
                 Checks for Object types,
@@ -76,7 +84,7 @@ public class TstJSON {
                 by calling convertToObject with that object as parameter
                 */
                 boolean isHashMap = false;
-                if(parameter.getClass().getName().equals("java.util.HashMap"))
+                if(!isNull && parameter.getClass().getName().equals("java.util.HashMap"))
                 {
                     isHashMap = true;
                     Object attr = cl.newInstance();
@@ -91,7 +99,7 @@ public class TstJSON {
                 calling the function invokePrimitiveArrayParameter
                 */
                 boolean isArrayList = false;
-                if(!isHashMap && cl.getName().charAt(0) == '[')
+                if(!isNull && !isHashMap && cl.getName().charAt(0) == '[')
                 {
                     isArrayList = true;
                     switch(cl.getName().charAt(1))
@@ -141,7 +149,7 @@ public class TstJSON {
                             }
                             me.invoke(x, (Object)paramLg);
                             break;
-                        //Case long[]
+                        //Case float []
                         case 'F':
                             float[] paramFl = new float[((java.util.ArrayList<Float>)parameter).size()];
                             for(int i = 0; i < paramFl.length; i++)
@@ -172,7 +180,7 @@ public class TstJSON {
                 }
 
                 //Check if it was not a primitive type array
-                if(!isHashMap && !isArrayList)
+                if(!isNull && !isHashMap && !isArrayList)
                 {
                     if(cl.getName().equals("int"))
                     {
