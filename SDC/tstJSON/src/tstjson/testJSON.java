@@ -39,6 +39,7 @@ public class testJSON {
         
         try {
             res = (ClsPersona) TstJSON.convertToObject(res, jo.toMap());
+            System.out.println(res.getArr());
             System.out.println(res.getEdad());
             System.out.println(res.getNombre());
             System.out.println(res.getNumeros());
