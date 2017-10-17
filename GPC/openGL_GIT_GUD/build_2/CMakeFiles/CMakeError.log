@@ -1,0 +1,42 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_088bb.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:50 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_088bb.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_088bb.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_088bb.dir\Debug\cmTC_088bb.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_088bb.dir\Debug\cmTC_088bb.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_088bb.dir\Debug\\" /Fd"cmTC_088bb.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"cmTC_088bb.dir\Debug\\" /Fd"cmTC_088bb.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_088bb.vcxproj]
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_088bb.vcxproj" (destinos predeterminados) -- ERROR.
+
+ERROR al compilar.
+
+"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_088bb.vcxproj" (destino predeterminado) (1) ->
+(ClCompile destino) -> 
+  C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_088bb.vcxproj]
+
+    0 Advertencia(s)
+    1 Errores
+
+Tiempo transcurrido 00:00:00.39
+
+

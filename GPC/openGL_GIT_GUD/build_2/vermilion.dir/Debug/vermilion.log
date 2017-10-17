@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/generate.stamp is up-to-date.
+  gl3w.c
+  LoadShaders.cpp
+  targa.cpp
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\targa.cpp(127): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: vea la declaración de 'fopen'
+  vdds.cpp
+  loadtexture.cpp
+  vermilion.cpp
+  vbm.cpp
+c:\155902\itam\gpc\opengl_git_gud\oglpg-9th-edition\include\vmath.h(1022): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+  vermilion.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\vermilion_d.lib

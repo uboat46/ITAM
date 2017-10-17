@@ -1,0 +1,16 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/src/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/lib/glfw/src/CMakeFiles/generate.stamp is up-to-date.
+  context.c
+  init.c
+  input.c
+  monitor.c
+  window.c
+  win32_init.c
+  win32_monitor.c
+  win32_time.c
+  win32_tls.c
+  win32_window.c
+  winmm_joystick.c
+  wgl_context.c
+  Generando código...
+  glfw.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw3_d.lib

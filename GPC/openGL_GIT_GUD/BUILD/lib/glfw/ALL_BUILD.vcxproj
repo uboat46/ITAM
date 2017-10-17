@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5719B8F7-1B3C-36EB-B355-5F3C7534DC50}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\include;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\include;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\include;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\include;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition -BC:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD --check-stamp-file C:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD/lib/glfw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\WriteBasicConfigVersionFile.cmake;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3Config.cmake.in;C:\Program Files\CMake\share\cmake-3.9\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\docs\Doxyfile.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw_config.h.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3.pc.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\cmake_uninstall.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition -BC:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD --check-stamp-file C:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD/lib/glfw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\WriteBasicConfigVersionFile.cmake;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3Config.cmake.in;C:\Program Files\CMake\share\cmake-3.9\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\docs\Doxyfile.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw_config.h.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3.pc.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\cmake_uninstall.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition -BC:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD --check-stamp-file C:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD/lib/glfw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\WriteBasicConfigVersionFile.cmake;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3Config.cmake.in;C:\Program Files\CMake\share\cmake-3.9\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\docs\Doxyfile.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw_config.h.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3.pc.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\cmake_uninstall.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition -BC:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD --check-stamp-file C:/155902/ITAM/GPC/openGL_GIT_GUD/BUILD/lib/glfw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\WriteBasicConfigVersionFile.cmake;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3Config.cmake.in;C:\Program Files\CMake\share\cmake-3.9\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\docs\Doxyfile.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw_config.h.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\src\glfw3.pc.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\cmake_uninstall.cmake.in;C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\ZERO_CHECK.vcxproj">
+      <Project>{5F99AF01-07FC-3443-810E-E5E762AB5930}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\boing.vcxproj">
+      <Project>{E396908E-6703-3AC2-86F3-EF3FAE39076B}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\clipboard.vcxproj">
+      <Project>{B6EDF775-3C26-3527-B450-69BAEE051874}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\cursor.vcxproj">
+      <Project>{85CE8CAC-1875-30EB-90CD-A40C9346C8C1}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\empty.vcxproj">
+      <Project>{8884EFD1-A1A4-3431-B2C6-7903160545A7}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\events.vcxproj">
+      <Project>{866FC8BE-C182-336F-97B7-37651AD5BB19}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\gamma.vcxproj">
+      <Project>{5DA15DAF-C3E1-3BBE-99E5-80B1018EC7BA}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\gears.vcxproj">
+      <Project>{7D646D5D-F640-39FD-845F-B4E3F3DFA8F8}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\src\glfw.vcxproj">
+      <Project>{326E205A-219F-3A69-ACE7-4D5827E6FD26}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\glfwinfo.vcxproj">
+      <Project>{E069E2FF-3DF0-3483-82E7-DB2CA5CCBDD2}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\heightmap.vcxproj">
+      <Project>{0C10D26C-BF3C-368C-B2B9-4DE575D9ED55}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\iconify.vcxproj">
+      <Project>{7B0FBB34-A6E5-3706-9555-495CB4EC9C9C}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\joysticks.vcxproj">
+      <Project>{47EEAF94-9D72-356C-B1B2-06729CB06CF7}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\monitors.vcxproj">
+      <Project>{8B0D9924-79F6-3DE3-B080-42EDC389244D}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\msaa.vcxproj">
+      <Project>{D820A14F-D331-3632-9859-23291820BCD3}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\particles.vcxproj">
+      <Project>{A30F45F1-2983-3D26-94F0-76FD91B583A3}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\reopen.vcxproj">
+      <Project>{FEEE5DAD-F668-30AE-8498-8F232A378FC4}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\sharing.vcxproj">
+      <Project>{2BACC643-4DA7-3604-9CD9-4A8DD4F33663}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\simple.vcxproj">
+      <Project>{36917F66-0D99-3F04-A41D-E94DF696022B}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\splitview.vcxproj">
+      <Project>{E5BC02F6-2D7A-349D-ACD1-D9E237275B3C}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\tearing.vcxproj">
+      <Project>{AB51FA4C-CEB8-3BA9-B632-FBCF63C25EBD}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\threads.vcxproj">
+      <Project>{E4DFBE6E-F9A4-3F1F-89C4-CB7C92B743A5}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\title.vcxproj">
+      <Project>{BBB098F0-EDB6-3B20-B5AC-85E03CFDFA0B}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\examples\wave.vcxproj">
+      <Project>{46E77CDE-3D7A-39BB-9CD1-5D3E5D143D30}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\155902\ITAM\GPC\openGL_GIT_GUD\BUILD\lib\glfw\tests\windows.vcxproj">
+      <Project>{6EE228AB-3C30-3C69-A0CC-4512E542FF35}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

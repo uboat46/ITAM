@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindDoxygen.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/WriteBasicConfigVersionFile.cmake
+C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/src/glfw3Config.cmake.in
+C:/Program Files/CMake/share/cmake-3.9/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/docs/Doxyfile.in
+C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/src/glfw_config.h.in
+C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/src/glfw3.pc.in
+C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/cmake_uninstall.cmake.in

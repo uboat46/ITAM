@@ -1,0 +1,11 @@
+﻿  simple.c
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(85): warning C4244: 'función': conversión de 'double' a 'float'; posible pérdida de datos
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(86): warning C4244: 'función': conversión de 'double' a 'float'; posible pérdida de datos
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(87): warning C4047: 'función': 'const GLfloat *' es distinto en los niveles de direccionamiento indirecto de 'mat4x4'
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(87): warning C4024: 'glMultMatrixf': tipos distintos para el parámetro formal y el parámetro real 1
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(88): warning C4047: 'función': 'const GLfloat *' es distinto en los niveles de direccionamiento indirecto de 'mat4x4'
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(88): warning C4024: 'glMultMatrixf': tipos distintos para el parámetro formal y el parámetro real 1
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(45): warning C4101: 'Rz': variable local sin referencia
+C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\lib\glfw\examples\simple.c(45): warning C4101: 'Rac': variable local sin referencia
+  simple.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\bin\simple.exe
+  simple.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/bin/simple.pdb (Full PDB)

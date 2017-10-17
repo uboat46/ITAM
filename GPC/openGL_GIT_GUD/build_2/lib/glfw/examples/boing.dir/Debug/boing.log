@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/lib/glfw/examples/CMakeLists.txt
+  CMake does not need to re-run because C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/lib/glfw/examples/CMakeFiles/generate.stamp is up-to-date.
+  boing.c
+  boing.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\OGLPG-9th-Edition\bin\boing.exe
+  boing.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/OGLPG-9th-Edition/bin/boing.pdb (Full PDB)

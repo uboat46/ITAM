@@ -1,0 +1,671 @@
+The system is: Windows - 10.0.15063 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine, versi�n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 17/10/2017 01:22:34 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir�.
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir�.
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir�.
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir�.
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\3.9.1\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdC.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\3.9.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Compilaci�n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\3.9.1\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.94
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/3.9.1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine, versi�n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 17/10/2017 01:22:35 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir�.
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir�.
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir�.
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir�.
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\3.9.1\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\3.9.1\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Compilaci�n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\3.9.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.71
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/3.9.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b5914.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:36 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_b5914.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_b5914.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_b5914.dir\Debug\cmTC_b5914.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_b5914.dir\Debug\cmTC_b5914.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5914.dir\Debug\\" /Fd"cmTC_b5914.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\testCCompiler.c
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5914.dir\Debug\\" /Fd"cmTC_b5914.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_b5914.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_b5914.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_b5914.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b5914.dir\Debug\testCCompiler.obj
+  cmTC_b5914.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_b5914.exe
+  cmTC_b5914.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_b5914.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_b5914.dir\Debug\cmTC_b5914.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_b5914.dir\Debug\cmTC_b5914.tlog\cmTC_b5914.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_b5914.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.92
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_a38b5.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:37 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_a38b5.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_a38b5.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_a38b5.dir\Debug\cmTC_a38b5.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_a38b5.dir\Debug\cmTC_a38b5.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a38b5.dir\Debug\\" /Fd"cmTC_a38b5.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a38b5.dir\Debug\\" /Fd"cmTC_a38b5.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_a38b5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_a38b5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_a38b5.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_a38b5.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_a38b5.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_a38b5.exe
+  cmTC_a38b5.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_a38b5.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_a38b5.dir\Debug\cmTC_a38b5.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_a38b5.dir\Debug\cmTC_a38b5.tlog\cmTC_a38b5.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_a38b5.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.64
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_68127.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:38 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_68127.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_68127.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_68127.dir\Debug\cmTC_68127.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_68127.dir\Debug\cmTC_68127.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_68127.dir\Debug\\" /Fd"cmTC_68127.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_68127.dir\Debug\\" /Fd"cmTC_68127.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_68127.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_68127.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_68127.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_68127.dir\Debug\testCXXCompiler.obj
+  cmTC_68127.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_68127.exe
+  cmTC_68127.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_68127.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_68127.dir\Debug\cmTC_68127.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_68127.dir\Debug\cmTC_68127.tlog\cmTC_68127.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_68127.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.64
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_ced49.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:39 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_ced49.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_ced49.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_ced49.dir\Debug\cmTC_ced49.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_ced49.dir\Debug\cmTC_ced49.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ced49.dir\Debug\\" /Fd"cmTC_ced49.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ced49.dir\Debug\\" /Fd"cmTC_ced49.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_ced49.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_ced49.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_ced49.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ced49.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_ced49.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_ced49.exe
+  cmTC_ced49.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_ced49.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_ced49.dir\Debug\cmTC_ced49.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_ced49.dir\Debug\cmTC_ced49.tlog\cmTC_ced49.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_ced49.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.66
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_05d6e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:40 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_05d6e.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_05d6e.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_05d6e.dir\Debug\cmTC_05d6e.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_05d6e.dir\Debug\cmTC_05d6e.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_05d6e.dir\Debug\\" /Fd"cmTC_05d6e.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_05d6e.dir\Debug\\" /Fd"cmTC_05d6e.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_05d6e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_05d6e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_05d6e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_05d6e.dir\Debug\feature_tests.obj
+  cmTC_05d6e.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_05d6e.exe
+  cmTC_05d6e.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_05d6e.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_05d6e.dir\Debug\cmTC_05d6e.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_05d6e.dir\Debug\cmTC_05d6e.tlog\cmTC_05d6e.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_05d6e.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.68
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_69944.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:42 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_69944.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_69944.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_69944.dir\Debug\cmTC_69944.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_69944.dir\Debug\cmTC_69944.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_69944.dir\Debug\\" /Fd"cmTC_69944.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_69944.dir\Debug\\" /Fd"cmTC_69944.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_69944.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_69944.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_69944.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_69944.dir\Debug\feature_tests.obj
+  cmTC_69944.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_69944.exe
+  cmTC_69944.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_69944.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_69944.dir\Debug\cmTC_69944.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_69944.dir\Debug\cmTC_69944.tlog\cmTC_69944.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_69944.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.68
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_d92c8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:43 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_d92c8.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_d92c8.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_d92c8.dir\Debug\cmTC_d92c8.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_d92c8.dir\Debug\cmTC_d92c8.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d92c8.dir\Debug\\" /Fd"cmTC_d92c8.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d92c8.dir\Debug\\" /Fd"cmTC_d92c8.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_d92c8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_d92c8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_d92c8.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_d92c8.dir\Debug\feature_tests.obj
+  cmTC_d92c8.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_d92c8.exe
+  cmTC_d92c8.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_d92c8.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_d92c8.dir\Debug\cmTC_d92c8.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_d92c8.dir\Debug\cmTC_d92c8.tlog\cmTC_d92c8.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_d92c8.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.65
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_449de.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine, versi¢n 14.0.25420.1
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci¢n iniciada a las 17/10/2017 01:22:44 p. m..
+El destino "_ConvertPdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" no existe en el proyecto y se omitir .
+El destino "_CollectPdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" no existe en el proyecto y se omitir .
+El destino "_CollectMdbFiles" que aparece en un atributo BeforeTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" no existe en el proyecto y se omitir .
+El destino "_CopyMdbFiles" que aparece en un atributo AfterTargets en "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" no existe en el proyecto y se omitir .
+Proyecto "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_449de.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_449de.dir\Debug\".
+  Creando directorio "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_449de.dir\Debug\cmTC_449de.tlog\".
+InitializeBuildStatus:
+  Se crear  "cmTC_449de.dir\Debug\cmTC_449de.tlog\unsuccessfulbuild" porque se especific¢ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_449de.dir\Debug\\" /Fd"cmTC_449de.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  Compilador de optimizaci¢n de C/C++ de Microsoft (R) versi¢n 19.00.24215.1 para x86
+  (C) Microsoft Corporation. Reservados todos los derechos.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_449de.dir\Debug\\" /Fd"cmTC_449de.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_449de.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_449de.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_449de.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_449de.dir\Debug\feature_tests.obj
+  cmTC_449de.vcxproj -> C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\Debug\cmTC_449de.exe
+  cmTC_449de.vcxproj -> C:/155902/ITAM/GPC/openGL_GIT_GUD/build_2/CMakeFiles/CMakeTmp/Debug/cmTC_449de.pdb (Full PDB)
+FinalizeBuildStatus:
+  Se eliminar  el archivo "cmTC_449de.dir\Debug\cmTC_449de.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_449de.dir\Debug\cmTC_449de.tlog\cmTC_449de.lastbuildstate".
+Compilaci¢n del proyecto terminada "C:\155902\ITAM\GPC\openGL_GIT_GUD\build_2\CMakeFiles\CMakeTmp\cmTC_449de.vcxproj" (destinos predeterminados).
+
+Compilaci¢n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.65
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
