@@ -102,77 +102,86 @@ public class TstJSON {
                 if(!isNull && !isHashMap && cl.getName().charAt(0) == '[')
                 {
                     isArrayList = true;
+                    java.util.ArrayList<Object> param;
                     switch(cl.getName().charAt(1))
                     {
                         //Case int[]
                         case 'I':
-                            int[] paramInt = new int[((java.util.ArrayList<Integer>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            int[] paramInt = new int[param.size()];
                             for(int i = 0; i < paramInt.length; i++)
                             {
-                                paramInt[i] = ((java.util.ArrayList<Integer>)parameter).get(i);
+                                paramInt[i] = (int)param.get(i);
                             }
                             me.invoke(x, (Object)paramInt);
                             break;
                         //Case double[]
                         case 'D':
-                            double[] paramDbl = new double[((java.util.ArrayList<Double>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            double[] paramDbl = new double[param.size()];
                             for(int i = 0; i < paramDbl.length; i++)
                             {
-                                paramDbl[i] = ((java.util.ArrayList<Double>)parameter).get(i);
+                                paramDbl[i] = (double)param.get(i);
                             }
                             me.invoke(x, (Object)paramDbl);
                             break;
                         //Case byte[]
                         case 'B':
-                            byte[] paramBt = new byte[((java.util.ArrayList<Byte>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            byte[] paramBt = new byte[param.size()];
                             for(int i = 0; i < paramBt.length; i++)
                             {
-                                paramBt[i] = ((java.util.ArrayList<Byte>)parameter).get(i);
+                                paramBt[i] = (byte)param.get(i);
                             }
                             me.invoke(x, (Object)paramBt);
                             break;
                         //Case short[]
                         case 'S':
-                            short[] paramSh = new short[((java.util.ArrayList<Short>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            short[] paramSh = new short[param.size()];
                             for(int i = 0; i < paramSh.length; i++)
                             {
-                                paramSh[i] = ((java.util.ArrayList<Short>)parameter).get(i);
+                                paramSh[i] = (short)param.get(i);
                             }
                             me.invoke(x, (Object)paramSh);
                             break;
                         //Case long[]
                         case 'J':
-                            long[] paramLg = new long[((java.util.ArrayList<Long>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            long[] paramLg = new long[param.size()];
                             for(int i = 0; i < paramLg.length; i++)
                             {
-                                paramLg[i] = ((java.util.ArrayList<Long>)parameter).get(i);
+                                paramLg[i] = (long)param.get(i);
                             }
                             me.invoke(x, (Object)paramLg);
                             break;
                         //Case float []
                         case 'F':
-                            float[] paramFl = new float[((java.util.ArrayList<Float>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            float[] paramFl = new float[param.size()];
                             for(int i = 0; i < paramFl.length; i++)
                             {
-                                paramFl[i] = ((java.util.ArrayList<Float>)parameter).get(i);
+                                paramFl[i] = (float)param.get(i);
                             }
                             me.invoke(x, (Object)paramFl);
                             break;
                         //Case boolean[]
                         case 'Z':
-                            boolean[] paramBl = new boolean[((java.util.ArrayList<Boolean>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            boolean[] paramBl = new boolean[param.size()];
                             for(int i = 0; i < paramBl.length; i++)
                             {
-                                paramBl[i] = ((java.util.ArrayList<Boolean>)parameter).get(i);
+                                paramBl[i] = (boolean)param.get(i);
                             }
                             me.invoke(x, (Object)paramBl);
                             break;
                         //Case char[]
                         case 'C':
-                            char[] paramCh = new char[((java.util.ArrayList<Character>)parameter).size()];
+                            param = (java.util.ArrayList<Object>)parameter;
+                            char[] paramCh = new char[param.size()];
                             for(int i = 0; i < paramCh.length; i++)
                             {
-                                paramCh[i] = ((java.util.ArrayList<Character>)parameter).get(i);
+                                paramCh[i] = (char)param.get(i);
                             }
                             me.invoke(x, (Object)paramCh);
                             break;
@@ -182,15 +191,33 @@ public class TstJSON {
                 //Check if it was not a primitive type array
                 if(!isNull && !isHashMap && !isArrayList)
                 {
-                    if(cl.getName().equals("int"))
+                    switch(cl.getName())
                     {
-                        cl = Integer.class;
+                        case "int":
+                            cl = Integer.class;
+                            break;
+                        case "double":
+                            cl = Double.class;
+                            break;
+                        case "float":
+                            cl = Float.class;
+                            break;
+                        case "short":
+                            cl = Short.class;
+                            break;
+                        case "long":
+                            cl = Long.class;
+                            break;
+                        case "byte":
+                            cl = Byte.class;
+                            break;
+                        case "char":
+                            cl = Character.class;
+                            break;
+                        case "boolean":
+                            cl = Boolean.class;
+                            break;
                     }
-                    if(cl.getName().equals("double"))
-                    {
-                        cl = Double.class;
-                    }
-
                     me.invoke(x, cl.cast(parameter));
                 }
             }
@@ -227,6 +254,17 @@ public class TstJSON {
         double[] num = {1,2,3,4,5};
         atrr.setAttrDoubleArr(num);
         p.setAtrr(atrr);
+        p.setBt((byte)15);
+        p.setCh('_');
+        p.setBl(true);
+        java.util.ArrayList<Integer> arrInt = new java.util.ArrayList<>();
+        arrInt.add(0);
+        arrInt.add(1);
+        arrInt.add(2);
+        arrInt.add(3);
+        arrInt.add(5);
+        arrInt.add(8);
+        p.setArr(arrInt);
         
         //Encode p into JSON Object
         jo = new org.json.JSONObject(p);
@@ -269,6 +307,15 @@ public class TstJSON {
         }
         System.out.println("]");
         System.out.println("x.getAtrr().getAttrInt(): " + x.getAtrr().getAttrInt());
+        System.out.println("x.getCh(): " + x.getCh());
+        System.out.println("x.getBt(): " + x.getBt());
+        System.out.println("x.isBl(): " + x.isBl());
+        System.out.print("x.getArr(): [");
+        for (int n : x.getArr())
+        {
+            System.out.print(n + ", ");
+        }
+        System.out.println("]");
     }
     
 }
