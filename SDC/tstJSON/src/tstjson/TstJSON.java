@@ -121,7 +121,7 @@ public class TstJSON {
                             double[] paramDbl = new double[param.size()];
                             for(int i = 0; i < paramDbl.length; i++)
                             {
-                                paramDbl[i] = (double)param.get(i);
+                                paramDbl[i] = (double)( Double.parseDouble(param.get(i).toString()) );
                             }
                             me.invoke(x, (Object)paramDbl);
                             break;
@@ -131,7 +131,7 @@ public class TstJSON {
                             byte[] paramBt = new byte[param.size()];
                             for(int i = 0; i < paramBt.length; i++)
                             {
-                                paramBt[i] = (byte)param.get(i);
+                                paramBt[i] = (byte)( Byte.parseByte(param.get(i).toString()) );
                             }
                             me.invoke(x, (Object)paramBt);
                             break;
@@ -141,7 +141,7 @@ public class TstJSON {
                             short[] paramSh = new short[param.size()];
                             for(int i = 0; i < paramSh.length; i++)
                             {
-                                paramSh[i] = (short)param.get(i);
+                                paramSh[i] = (short)( Short.parseShort(param.get(i).toString()) );
                             }
                             me.invoke(x, (Object)paramSh);
                             break;
@@ -151,7 +151,7 @@ public class TstJSON {
                             long[] paramLg = new long[param.size()];
                             for(int i = 0; i < paramLg.length; i++)
                             {
-                                paramLg[i] = (long)param.get(i);
+                                paramLg[i] = (long)( Long.parseLong(param.get(i).toString()) );
                             }
                             me.invoke(x, (Object)paramLg);
                             break;
@@ -161,7 +161,7 @@ public class TstJSON {
                             float[] paramFl = new float[param.size()];
                             for(int i = 0; i < paramFl.length; i++)
                             {
-                                paramFl[i] = (float)param.get(i);
+                                paramFl[i] = (float)( Float.parseFloat(param.get(i).toString()) );
                             }
                             me.invoke(x, (Object)paramFl);
                             break;
@@ -189,36 +189,49 @@ public class TstJSON {
                 }
 
                 //Check if it was not a primitive type array
+                boolean isPrimitive = false;
                 if(!isNull && !isHashMap && !isArrayList)
                 {
+                    isPrimitive = true;
                     switch(cl.getName())
                     {
                         case "int":
                             cl = Integer.class;
+                            me.invoke(x, cl.cast(parameter));
                             break;
                         case "double":
                             cl = Double.class;
+                            me.invoke(x, cl.cast(Double.parseDouble(parameter.toString())));
                             break;
                         case "float":
                             cl = Float.class;
+                            me.invoke(x, cl.cast(Float.parseFloat(parameter.toString())));
                             break;
                         case "short":
                             cl = Short.class;
+                            me.invoke(x, cl.cast(Short.parseShort(parameter.toString())));
                             break;
                         case "long":
                             cl = Long.class;
+                            me.invoke(x, cl.cast(Long.parseLong(parameter.toString())));
                             break;
                         case "byte":
                             cl = Byte.class;
+                            me.invoke(x, cl.cast(Byte.parseByte(parameter.toString())));
                             break;
                         case "char":
                             cl = Character.class;
+                            me.invoke(x, cl.cast(((String)parameter).charAt(0)));
                             break;
                         case "boolean":
                             cl = Boolean.class;
+                            me.invoke(x, cl.cast(parameter));
                             break;
                     }
-                    me.invoke(x, cl.cast(parameter));
+                    if(!isNull && !isHashMap && !isArrayList && !isPrimitive)
+                    {
+                        me.invoke(x, cl.cast(parameter));
+                    }
                 }
             }
         }
@@ -272,8 +285,12 @@ public class TstJSON {
         //Obtain String from JSON Object
         cadena = jo.toString();
         
+        //Create new JSONObject from cadena
+        org.json.JSONObject jNew = new org.json.JSONObject(cadena);
+        
         //Obtain Map from JSON Object
-        java.util.Map<String, Object> m = jo.toMap();
+        java.util.Map<String, Object> m = jNew.toMap();
+        //java.util.Map<String, Object> m = jo.toMap();
         
         try
         {

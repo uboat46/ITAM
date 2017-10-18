@@ -15,7 +15,13 @@ public class ClsPersona {
     private String nombre = null;
     private int edad = 0;
     private double fl = 0;
-
+    private byte bt = 0;
+    private char ch = ' ';
+    private boolean bl = false;
+    private short sh = 0;
+    private long lg = 0;
+    private java.util.ArrayList<Integer> arr = null;
+    
     public ArrayList<Integer> getArr() {
         return arr;
     }
@@ -23,12 +29,7 @@ public class ClsPersona {
     public void setArr(ArrayList<Integer> arr) {
         this.arr = arr;
     }
-    private byte bt = 0;
-    private char ch = ' ';
-    private boolean bl = false;
-    private short sh = 0;
-    private long lg = 0;
-    private java.util.ArrayList<Integer> arr = null;
+    
     
     public double getFl() {
         return fl;
