@@ -227,6 +227,8 @@ public class TstJSON {
                             cl = Boolean.class;
                             me.invoke(x, cl.cast(parameter));
                             break;
+                        default:
+                            isPrimitive = false;
                     }
                     if(!isNull && !isHashMap && !isArrayList && !isPrimitive)
                     {
