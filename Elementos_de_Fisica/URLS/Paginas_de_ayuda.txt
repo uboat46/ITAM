@@ -1,0 +1,13 @@
+http://www.sc.ehu.es/sbweb/fisica3/electrico/dipolo/dipolo.html
+
+https://www.lawebdelprogramador.com/foros/Matlab/1336658-graficar-potencial-y-campo-electrico-de-un-anillo-cargado.html
+
+https://books.google.com.mx/books?id=dAvjPaUFdAMC&pg=PA244&lpg=PA244&dq=matlab+graficar+potencial+electrico+de+carga+puntual&source=bl&ots=DraKpejfx8&sig=Z1WZaW9zNI2GyrN6n2-jUyk8wc4&hl=es&sa=X&ved=0ahUKEwiu8d-j2tLWAhXksVQKHcH8CqgQ6AEIMjAC#v=onepage&q=matlab%20graficar%20potencial%20electrico%20de%20carga%20puntual&f=false
+
+https://prezi.com/udptrb-6oa_8/potencial-electrico-producido-por-una-carga-puntual/?webgl=0
+
+http://www.physics.usyd.edu.au/teach_res/mp/mscripts/
+
+http://www.physics.usyd.edu.au/teach_res/mp/doc/cemVEA.pdf
+
+http://laplace.us.es/wiki/index.php/Campo_el%C3%A9ctrico_de_un_anillo_y_un_disco
