@@ -88,15 +88,15 @@ function BinaryTreeFromArray(arr = null, left = 0, right = 0) {
         var node = new Node(arr[mid]);
         var rightNode = BinaryTreeFromArray(arr, mid + 1, right);
         var leftNode = BinaryTreeFromArray(arr, left, mid - 1);
-        node.right = rightNode;
-        node.left = leftNode;
+        node.setRight(rightNode);
+        node.setLeft(leftNode);
         return node;
     }
     return null;
 }
 
 
-var arr = [1,2,3,4,5,6,7,8];
+var arr = [1,2,3,4,5,6,7];
 
 var Btree = new BinaryTree(BinaryTreeFromArray(arr,0, arr.length - 1));
 
