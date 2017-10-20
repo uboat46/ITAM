@@ -11,11 +11,9 @@ Node.prototype.print = function(){
 Node.prototype.printLeftRight = function(){
     this.print();
     if(this.left){
-        this.left.print();
         this.left.printLeftRight();
     }
     if(this.right){
-        this.right.print();
         this.right.printLeftRight();
     }
 }
@@ -34,24 +32,23 @@ function BinaryTree(node){
 
 BinaryTree.prototype.print = function(){
     this.head.printLeftRight();
-
 }
 
 function BinaryTreeFromArray(arr, left, right) {
-    var mid = Math.floor((right - left) / 2);
-    if(mid > 0){
+    if(right >= left){
+        var mid = Math.floor((right + left) / 2);
         var node = new Node(arr[mid]);
-        var rightNode = BinaryTreeFromArray(arr.slice(mid + 1), mid + 1, right);
-        var leftNode = BinaryTreeFromArray(arr.slice(0 , mid), left, mid - 1);
+        var rightNode = BinaryTreeFromArray(arr, mid + 1, right);
+        var leftNode = BinaryTreeFromArray(arr, left, mid - 1);
         node.right = rightNode;
-        node.leftNode = leftNode;
+        node.left = leftNode;
         return node;
     }
     return null;
 }
 
 
-var arr = [1,2,3,4,5,6,7];
+var arr = [1,2,3,4,5,6,7,8];
 
 var Btree = new BinaryTree(BinaryTreeFromArray(arr,0, arr.length - 1));
 
