@@ -38,6 +38,16 @@ public class TstJSON {
 //        
 //        
 //    }
+    /**
+     * 
+     * @param x
+     * @param m
+     * @return Object
+     * @throws IllegalAccessException
+     * @throws IllegalArgumentException
+     * @throws InvocationTargetException
+     * @throws InstantiationException 
+     */
     public static Object convertToObject(Object x, java.util.Map<?, ?> m) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException {
 
         //Get setters from x object
