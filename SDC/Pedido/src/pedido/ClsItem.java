@@ -36,5 +36,8 @@ public class ClsItem implements java.io.Serializable{
         this.cantidad = cantidad;
     }
     
+    public String getPrecio() {
+       return "" + this.getIdProducto() + ": " + this.getCantidad();
+    }
     
 }

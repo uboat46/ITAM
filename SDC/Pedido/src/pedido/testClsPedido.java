@@ -34,13 +34,15 @@ public class testClsPedido {
         pedido.setItems(items);
 
         org.json.JSONObject jo = new org.json.JSONObject(pedido);
-
+        org.json.JSONObject jn = new org.json.JSONObject(jo.toString());
         System.out.println(jo.toString());
         
         try {    
             ClsPedido newPedido = new ClsPedido();
-            tstjson.TstJSON.convertToObject(newPedido, jo.toMap());
+            ClsItem it = new ClsItem();
+            tstjson.TstJSON.convertToObject(it, newPedido.getItems().get(0));
             System.out.println("newPedido.getItems(): " + newPedido.getItems());
+            System.out.println("it.getPrecio()" + it.getPrecio());
         } catch (IllegalAccessException ex) {
             Logger.getLogger(testClsPedido.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalArgumentException ex) {
